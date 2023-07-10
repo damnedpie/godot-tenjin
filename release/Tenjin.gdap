@@ -1,0 +1,5 @@
+[config]
+
+name="GodotTenjin"
+binary_type="local"
+binary="GodotTenjin.1.12.16.release.aar"
