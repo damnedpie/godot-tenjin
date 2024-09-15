@@ -1,0 +1,16 @@
+[config]
+
+name="GodotTenjin"
+binary_type="local"
+binary="GodotTenjin.1.16.5.release.aar"
+
+[dependencies]
+
+local=[]
+remote=[
+	"com.google.android.gms:play-services-ads-identifier:18.1.0",
+	"com.android.installreferrer:installreferrer:2.2",
+	"com.facebook.android:facebook-applinks:17.0.2",
+	"com.tenjin:android-sdk:1.16.5"
+	]
+custom_maven_repos=[]
