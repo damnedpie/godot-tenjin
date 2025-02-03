@@ -47,7 +47,7 @@ func logPurchase(sku:String, currencyCode:String, quantity:int, unitPrice:float)
 # "purchaseData" is purchase.getOriginalJson() from Google Play Billing Library's Purchase object.
 # "signature" is purchase.getSignature() from Google Play Billing Library's Purchase object.
 func logPurchaseWithSignature(sku:String, currencyCode:String, quantity:int, unitPrice:float, purchaseData:String, signature:String) -> void:
-	_tenjin.logPurchase(sku, currencyCode, quantity, unitPrice, purchaseData, signature)
+	_tenjin.logPurchaseWithSignature(sku, currencyCode, quantity, unitPrice, purchaseData, signature)
 
 # Returns Google Advertising ID as a String. If failed to obtain it, returns empty string and emits failure signal.
 func getGAID() -> String:
