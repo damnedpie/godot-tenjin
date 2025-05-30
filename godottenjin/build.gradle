@@ -1,7 +1,9 @@
 apply plugin: 'com.android.library'
 
 ext.pluginVersionCode = 1
-ext.pluginVersionName = "1.16.5"
+ext.pluginVersionName = "1.16.7"
+ext.zipName = "godot-tenjin"
+ext.godotVersion = "3.6"
 
 android {
     compileSdk 34
@@ -26,11 +28,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.gms:play-services-ads-identifier:18.1.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0'
     implementation 'com.android.installreferrer:installreferrer:2.2'
-    implementation 'com.facebook.android:facebook-applinks:17.0.2'
-    implementation 'com.tenjin:android-sdk:1.16.5'
-    compileOnly fileTree(dir: 'libs', includes: ['godot-lib*.aar'])
+    implementation 'com.facebook.android:facebook-applinks:18.0.1'
+    implementation 'com.tenjin:android-sdk:1.16.7'
+    implementation 'org.godotengine:godot:3.6.0.stable'
 }
 
 tasks.register('buildIntoRelease', Copy) {
@@ -39,4 +41,16 @@ tasks.register('buildIntoRelease', Copy) {
     from([buildDir.absolutePath, 'outputs', 'aar'].join(File.separator))
     include("GodotTenjin.${pluginVersionName}.release.aar")
     into([rootDir.absolutePath, 'release'].join(File.separator))
+}
+
+tasks.register('buildIntoReleaseAndPrepareForGithub', Zip) {
+    group = "build"
+    dependsOn tasks.buildIntoRelease
+    from([rootDir.absolutePath, 'release'].join(File.separator))
+    include("*.gd", "*.gdap", "*.aar")
+    archiveFileName = "${zipName}-${pluginVersionName}-${godotVersion}.zip"
+    destinationDirectory = file([rootDir.absolutePath, 'release'].join(File.separator))
+    def metaTxt = new File([rootDir.absolutePath, 'release', "github-meta.txt"].join(File.separator))
+    metaTxt.text = "SDK ${pluginVersionName}, Godot ${godotVersion}+, rev.1"
+    metaTxt.text += "\nSDK${pluginVersionName}GD${godotVersion}rev1"
 }

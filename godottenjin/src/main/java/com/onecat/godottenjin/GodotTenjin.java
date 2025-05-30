@@ -38,22 +38,13 @@ public class GodotTenjin extends GodotPlugin
         return TenjinSDK.getInstance(activity, apiKey);
     }
 
-    @Nullable
     @Override
-    public View onMainCreate(Activity activity) {
-        return null;
-    }
-
-/*    @Override
     public void onMainResume() {
-
         if (apiKey != null && activity != null) {
             TenjinSDK instance = getTenjinInstance();
             instance.connect();
         }
     }
-
- */
 
     @NonNull
     @Override
