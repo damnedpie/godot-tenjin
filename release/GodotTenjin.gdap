@@ -8,7 +8,7 @@ binary="GodotTenjin.1.16.7.release.aar"
 
 local=[]
 remote=[
-	"com.google.android.gms:play-services-ads-identifier:18.2.0",
+	"com.google.android.gms:play-services-ads-identifier:18.1.0",
 	"com.android.installreferrer:installreferrer:2.2",
 	"com.facebook.android:facebook-applinks:18.0.1",
 	"com.tenjin:android-sdk:1.16.7"

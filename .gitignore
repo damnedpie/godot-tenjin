@@ -4,3 +4,4 @@ build/
 local.properties
 github-meta.txt
 release/*.zip
+libs/
