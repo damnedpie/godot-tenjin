@@ -1,16 +1,17 @@
-# Godot Tenjin 1.17.1
+# Godot Tenjin 1.17.3
+[![Tenjin](https://img.shields.io/badge/Tenjin_1.17.3-%230271c3?style=for-the-badge)](https://tenjin.com/)
 [![Godot](https://img.shields.io/badge/Godot%20Engine-3.6.2-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
-[![Tenjin](https://img.shields.io/badge/Tenjin_1.17.1-%230271c3?style=for-the-badge)](https://tenjin.com/)
+[![Godot](https://img.shields.io/badge/Godot%20Engine-4.6.1-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
 [![GitHub License](https://img.shields.io/github/license/damnedpie/godot-tenjin?style=for-the-badge)](https://github.com/damnedpie/godot-tenjin/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-tenjin?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](https://github.com/damnedpie/godot-tenjin/stargazers)
 
-Tenjin SDK 1.17.1 Android plugin for Godot. Built on Godot 3.6.2 dependency.
+Tenjin SDK 1.17.3 Android plugin for Godot. Built on Godot 3.6.2 / Godot 4.6.1 dependency.
 
 ## Setup
 
 ### Project integration
 
-Grab the``GodotTenjijn`` plugin binary (.aar) and config (.gdap) from the releases page and put both into ``res://android/plugins``. For easy start, you can also use my ``GodotTenjin.gd`` script (it's very well documented).
+Grab the``GodotTenjijn`` plugin binary (.aar) and config (.gdap) from `godot3` or `godot4` folder and put both into ``res://android/plugins``. For easy start, you can also use my ``GodotTenjin.gd`` script (it's very well documented).
 
 Make sure to open your Godot project, go to Project -> Settings and add a new ``"Tenjin/AppKey" property (String)``. Store your Tenjin AppKey inside this property and reference it via ``ProjectSettings.get_setting("Tenjin/AppKey")``.
 
