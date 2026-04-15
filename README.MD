@@ -1,11 +1,11 @@
-# Godot Tenjin 1.17.3
-[![Tenjin](https://img.shields.io/badge/Tenjin_1.17.3-%230271c3?style=for-the-badge)](https://tenjin.com/)
+# Godot Tenjin 1.17.4
+[![Tenjin](https://img.shields.io/badge/Tenjin_1.17.4-%230271c3?style=for-the-badge)](https://tenjin.com/)
 [![Godot](https://img.shields.io/badge/Godot%20Engine-3.6.2-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
 [![Godot](https://img.shields.io/badge/Godot%20Engine-4.6.1-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
 [![GitHub License](https://img.shields.io/github/license/damnedpie/godot-tenjin?style=for-the-badge)](https://github.com/damnedpie/godot-tenjin/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-tenjin?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](https://github.com/damnedpie/godot-tenjin/stargazers)
 
-Tenjin SDK 1.17.3 Android plugin for Godot. Built on Godot 3.6.2 / Godot 4.6.1 dependency.
+Tenjin SDK 1.17.4 Android plugin for Godot. Built on Godot 3.6.2 / Godot 4.6.2 dependency.
 
 ## Setup
 

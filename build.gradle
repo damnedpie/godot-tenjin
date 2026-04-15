@@ -1,5 +1,5 @@
 ext.pluginVersionCode = 1
-ext.pluginVersionName = "1.17.3"
+ext.pluginVersionName = "1.17.4"
 ext.zipName = "godot-tenjin"
 
 tasks.register('buildGithubRelease', Zip) {
