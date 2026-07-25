@@ -2,7 +2,7 @@
 
 name="GodotTenjin"
 binary_type="local"
-binary="GodotTenjin.1.17.4.release.aar"
+binary="GodotTenjin.1.21.0.release.aar"
 
 [dependencies]
 
@@ -10,7 +10,7 @@ local=[]
 remote=[
 	"com.google.android.gms:play-services-ads-identifier:18.1.0",
 	"com.android.installreferrer:installreferrer:2.2",
-	"com.facebook.android:facebook-applinks:18.1.3",
-	"com.tenjin:android-sdk:1.17.4"
+	"com.facebook.android:facebook-applinks:18.3.0",
+	"com.tenjin:android-sdk:1.21.0"
 	]
 custom_maven_repos=[]
